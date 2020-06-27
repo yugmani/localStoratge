@@ -23,9 +23,10 @@ function renderLastRegistered() {
   else {
     var userEmail = localStorage.getItem("email");
     var userPassword = localStorage.getItem("password");
-
+    var localMessage = "Restored last record from local storage....";
     userEmailSpan.textContent = userEmail;
     userPasswordSpan.textContent = userPassword;
+    document.querySelector("#local").innerHTML = `<h3>${localMessage}</h3>`;
   }
 }
 
